@@ -79,6 +79,8 @@ body {
     overflow-y: auto;
     height:400px;
     margin-bottom:40px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccccf5 transparent;
 }
 
 .chat-body .message {
