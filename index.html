@@ -51,13 +51,19 @@
             <form action="" class="chat-form">
                 <textarea placeholder="Messsage..." class="message-input" required></textarea>
                 <div class="chat-controls">
-                    <button class="material-symbols-outlined">sentiment_satisfied</button>
-                    <button class="material-symbols-outlined">attach_file</button>
+                    <button id="emoji-picker" class="material-symbols-outlined">sentiment_satisfied</button>
+                    <div class="file-upload-wrapper">
+                        <input hidden id="file-input" type="file"  accept="images/*">
+                        <img src="#" alt="Preview ot this file">
+                        <button id="file-upload" class="material-symbols-outlined">attach_file</button>
+                        <button id="file-cancel" class="material-symbols-outlined">close</button>
+                    </div>
                     <button id="send-message" type="submit" class="material-symbols-outlined">arrow_upward</button>
                 </div>
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
